@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170227201957) do
+ActiveRecord::Schema.define(version: 20170307012217) do
 
   create_table "Payments", force: :cascade do |t|
     t.string   "date_payment"
@@ -28,6 +28,21 @@ ActiveRecord::Schema.define(version: 20170227201957) do
     t.string   "comments"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "title"
+    t.text     "description"
+    t.string   "email"
+    t.string   "website"
+    t.string   "contact"
+    t.string   "volunteer"
+    t.string   "phone"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "mailboxer_conversation_opt_outs", force: :cascade do |t|

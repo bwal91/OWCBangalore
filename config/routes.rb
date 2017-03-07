@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/back', to: 'homes#index' # Back button option
   # Bangalore dropdown navigation bar*
   get '/moving_to', to: 'homes#moving_to'
+  get '/footer_test', to: 'homes#footer_test'
   # Moving to Bangalore Links
     # Start
   get '/healthcare', to: 'homes#healthcare', as: 'healthcare'
@@ -60,7 +61,9 @@ Rails.application.routes.draw do
   get '/charities', to: 'homes#charities'
     # Start
   get '/charities_list', to: 'homes#charities_list', as: 'charities_list'
-  get '/charity_map', to: 'homes#chairty_map', as: 'charity_map'
+  get '/charity_map', to: 'homes#charity_map', as: 'charity_map'
+  post '/add_location', to: 'locations#create', as: 'locations'
+
     # end
   # Our Work dropdown navigation bar*
   get '/contributions', to: 'homes#contributions'

@@ -53,6 +53,11 @@ gem 'load_and_authorize_resource'
 gem 'normalize-rails'
 gem 'binding_of_caller'
 gem 'letter_opener', :group => :development
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+gem "gmaps4rails"
+gem "geocoder"
 
 
 #END for Brandon
