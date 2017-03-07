@@ -10,6 +10,7 @@ Rails.application.config.assets.precompile += %w( profile.css )
 Rails.application.config.assets.precompile += %w( simple-sidebar.css )
 Rails.application.config.assets.precompile += %w( inbox.css )
 Rails.application.config.assets.precompile += %w( info.css )
+Rails.application.config.assets.precompile += %w( bottom.css )
 
 
 

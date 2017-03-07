@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
-  before_action :authenticate_user!, :only => [:public_calendar, :board_members]
   load_and_authorize_resource
+  before_action :authenticate_user!, :only => [:public_calendar, :board_members]
   # Home Page
   def index
   end
@@ -176,9 +176,14 @@ class HomesController < ApplicationController
     end
   end
   def charity_map
-    respond_to do |format|
-        format.js
+    @locations = Location.all
+    @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
+      marker.lat location.latitude
+      marker.lng location.longitude
+      marker.infowindow location.title
+
     end
+    render :template => "layouts/charities/charity_map"
   end
     # end
   # Our Work dropdown navigation bar
@@ -249,5 +254,8 @@ class HomesController < ApplicationController
     render :template => "homes/contactUs/trustee"
   end
   def board_members
+  end
+  def footer_test
+    render :template => "layouts/footer_test"
   end
 end

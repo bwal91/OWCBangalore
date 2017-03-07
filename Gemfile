@@ -54,6 +54,13 @@ gem 'rails_admin'
 gem 'cancancan'
 gem 'load_and_authorize_resource'
 gem 'normalize-rails'
+gem 'binding_of_caller'
+gem 'letter_opener', :group => :development
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+gem "gmaps4rails"
+gem "geocoder"
 
 
 #END for Brandon
@@ -65,6 +72,7 @@ gem 'normalize-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'better_errors'
 end
 
 group :development do
