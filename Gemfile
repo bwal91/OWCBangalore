@@ -5,12 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-  # Added by Kyle
-gem 'wdm', '>= 0.1.0'
-gem 'gmaps4rails'
-gem 'geokit-rails'
-  # END
-
 gem 'mail_form'
 gem 'hirb'
 gem 'rails', '~> 5.0.1'
@@ -80,8 +74,8 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  # gem 'spring'
-  # gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 
 end
 
