@@ -30,8 +30,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
    
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -51,17 +50,17 @@
     <style type="text/css">body { margin: 0; padding-top: 80px; height: 100%; font-family: 'Open Sans',Arial,sans-serif;}</style>
   <%= nav_bar brand: image_tag("owclogo.png"), fixed: :top, responsive: true do %>
     <%= menu_group do %>
-        <%= menu_item "Home" %>
+        <%= menu_item "Home", home_path %>
         <%= drop_down "Bangalore" do %>
-            <%= menu_item "Moving to Bangalore" %>
-            <%= menu_item "Life if Bangalore" %>
+            <%= menu_item "Moving to Bangalore", moving_to_path %>
+            <%= menu_item "Life if Bangalore", life_in_path %>
         <% end %>
         <%= drop_down "Membership" do %>
-            <%= menu_item "New Members" %>
-            <%= menu_item "Renew Membership" %>
-            <%= menu_item "Publications" %>
-            <%= menu_item "Volunteer Opportunities" %>
-            <%= menu_item "Public Calendar" %>
+            <%= menu_item "New Members", new_member_path %>
+            <%= menu_item "Renew Membership", renew_membership_path %>
+            <%= menu_item "Publications", publication_path %>
+            <%= menu_item "Volunteer Opportunities", volunteer_path %>
+            <%= menu_item "Public Calendar", public_calendar_path %>
         <% end %>
         <%= drop_down "Our Work" do %>
             <%= menu_item "Charities" %>
@@ -80,10 +79,10 @@
     <% end %>
     <%= menu_group pull: :right do %>
         <% if current_user %>
-          <%= menu_item "Hello,", current_user.first_name %>
-          <%= menu_item "Inbox" %>
+          <%= menu_item "Hello, #{current_user.first_name}" %>
+          <%= menu_item "Inbox", mailbox_inbox_path %>
             <% if current_user.superadmin_role == true %>
-            <%= menu_item "Admin" %>
+            <%= menu_item "Admin", rails_admin_path %>
             <% end %>
             <%= menu_item "Log Out", destroy_session_path %>
         <% else %>
@@ -103,68 +102,27 @@
 
     <%= yield %>
 </div>
-  <% if controller.controller_name == "homes" %>
     <footer id="myFooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>About Us</h5>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Club Information</a></li>
-                        <li><a href="#">Misison Statement</a></li>
-                        <li><a href="#">Journey so Far</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Contact Us</h5>
-                    <ul>
-                        <li><a href="#">Contact Form</a></li>
-                        <li><a href="#">Executive Comittee</a></li>
-                        <li><a href="#">Trustee</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Advertisement</h5>
-                    <ul>
-                        <li><a href="#">Sponsors</a></li>
-                        <li><a href="#">Sponsor Form</a></li>
-                        <li><a href="#">Advertisement</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Community</h5>
-                    <ul>
-                        <li><a href="#">Get Involved</a></li>
-                        <li><a href="#">Charities</a></li>
-                        <li><a href="#">Social Support Group</a></li>
-                    </ul>
-                </div>
+    <%= yield :footer %>
+        <div class="footer-copyright" id="permfoot">
+            <p>© 2017 www.owcbangalore.org - All Rights Reserved </p>
+            <div id="time">
+            <p>Current Time in Bangalore: <%= Time.zone.now.strftime('%b %a, %d, %y - %H:%M (%I:%m %p)')   %></p>
             </div>
-            <!-- Here we use the Google Embed API to show Google Maps. -->
-            <!-- In order for this to work in your project you will need to generate a unique API key.  -->
-            <iframe id="map-container" frameborder="0" style="border:2px solid white"
-                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbU60yXAWrjsR4E9-UejD3_g&key=AIzaSyBnKgvJ7b5maPy56J8lrE1CCC6SXWgr6fY&zoom=12" >
-            </iframe>
-        </div>
-        <div class="social-networks">
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2016 Copyright Text </p>
+            <div id="foot-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li> / </li>
+                    <li><a href="#">About</a></li>
+                    <li> / </li>
+                    <li><a href="#">Contact</a></li>
+                    <li> / </li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <% else %>
-    <footer id="myFooter">
-        <div class="footer-copyright">
-            <p>© 2016 Copyright Text </p>
-        </div>
-    </footer>
-  <% end %>
+    
 </div>
   </body>
 </html>

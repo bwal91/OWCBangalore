@@ -1,0 +1,29 @@
+
+<div id="wrapper">
+<style> 
+#wrapper {max-height: 200px; max-width: 600px; overflow: auto; padding-right: 15px;}
+#body,#address {display: inline-block; width: 100%;}
+h1 {text-align: center; font-weight: bold;}
+span {font-weight: bold;}
+p {font-size: 17}
+#logo {max-height: 80px; max-width: 120px; float: right;}
+</style>
+	<div id="title">
+		<h1> <%= location.title %> </h1>
+	</div>
+	<div id="address">
+		<p style="text-align:center; margin-right: auto; margin-left: auto;"><span> <%= location.address %> </span> </p>
+		<% if location.image.present? %>
+		<img id="logo" src="<%= location.image %>">
+		<% end %>
+		<p> <span>Tel:</span> <%= location.phone %> </p>
+		<p> <span>Email:</span><a href="mailto:<%= location.email %>"> <%= location.email %> </a></p>
+		<p> <span>Website:</span><a href="<%= location.website %>"> <%= location.website %></a> </p>
+		<p> <span>Contact:</span> <%= location.contact %> </p>
+	</div>
+	<div id="body>">
+		<br>
+		<p> <span>Details:</span> <%= location.description %> </p>
+		<p> <span>Volunteer Opportunities:</span> <%= location.volunteer %> </p>
+	</div>
+</div>

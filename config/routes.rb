@@ -9,9 +9,10 @@ Rails.application.routes.draw do
     get '/change_password', :to => 'devise/passwords#new', :as => :change_password
   end
   root to: 'homes#index' # Home page
+  get '/', to: 'homes#index', as: 'home'
   get '/back', to: 'homes#index' # Back button option
   # Bangalore dropdown navigation bar*
-  get '/moving_to', to: 'homes#moving_to'
+  get '/moving_to', to: 'homes#moving_to', :as => :moving_to
   get '/footer_test', to: 'homes#footer_test'
   # Moving to Bangalore Links
     # Start
@@ -25,7 +26,7 @@ Rails.application.routes.draw do
   get '/pets', to: 'homes#pets', as: 'pets'
     # end
   # Bangalore dropdown nav bar*
-  get '/life_in', to: 'homes#life_in'
+  get '/life_in', to: 'homes#life_in', :as => :life_in
     # Start
   get '/pests', to: 'homes#pests', as: 'pests'
   get '/shopping', to: 'homes#shopping', as: 'shopping'
@@ -33,16 +34,16 @@ Rails.application.routes.draw do
   get '/festivals', to: 'homes#festivals', as: 'festivals'
     # end
   # Membership dropdown navigation bar*
-  get '/new_member', to: 'homes#new_member' # New Memeber Info, Benefits, etc.
+  get '/new_member', to: 'homes#new_member', as: 'new_member' # New Memeber Info, Benefits, etc.
     # Start
   get '/member_info', to: 'homes#member_info', as: 'member_info'
   get '/new_member_app', to: 'homes#new_member_app', as: 'new_member_app'
   get '/benefits', to: 'homes#benefits', as: 'benefits'
     # end
-  get '/renew_membership', to: 'homes#renew_membership' # Renew membership here
+  get '/renew_membership', to: 'homes#renew_membership', as: 'renew_membership' # Renew membership here
   get '/renew_form', to: 'homes#renew_form', as: 'renew_form'
   # Membership dropdown nav bar*
-  get '/publication', to: 'homes#publication'
+  get '/publication', to: 'homes#publication', as: 'publication'
     # Start
   get '/member_magazine', to: 'homes#member_magazine', as: 'member_magazine'
   get '/in_and_out', to: 'homes#in_and_out', as: 'in_and_out'
@@ -50,7 +51,7 @@ Rails.application.routes.draw do
   get '/other_publication', to: 'homes#other_publication', as: 'other_publication'
     # End
   # Membership dropdown nav bar*
-  get '/volunteer', to: 'homes#volunteer'
+  get '/volunteer', to: 'homes#volunteer', as: 'volunteer'
     # Start
   get '/job_openings', to: 'homes#job_openings', as: 'job_openings'
   get '/volunteer_form', to: 'homes#volunteer_form', as: 'volunteer_form'

@@ -18,8 +18,8 @@
           <div class="slide-1"></div>
           <div class="hero">
             <hgroup>
-                <h1>Overseas Women's Club of</h1>
-                <h3>Bangalore</h3>
+                <h1 id="carh1">Overseas Women's Club of</h1>
+                <h3 id="carh3">Bangalore</h3>
             </hgroup>
           </div>
         </div>
@@ -27,8 +27,8 @@
           <div class="slide-2"></div>
           <div class="hero">
             <hgroup>
-                <h1>ಸಾಗರೋತ್ತರದಲ್ಲಿ ಮಹಿಳಾ ಕ್ಲಬ್</h1>
-                <h3>ಬೆಂಗಳೂರು</h3>
+                <h1 id="carh1">ಸಾಗರೋತ್ತರದಲ್ಲಿ ಮಹಿಳಾ ಕ್ಲಬ್</h1>
+                <h3 id="carh3">ಬೆಂಗಳೂರು</h3>
             </hgroup>
           </div>
         </div>
@@ -36,8 +36,8 @@
           <div class="slide-3"></div>
           <div class="hero">
             <hgroup>
-                <h1>प्रवासी महिला क्लब</h1>
-                <h3>बैंगलोर</h3>
+                <h1 id="carh1">प्रवासी महिला क्लब</h1>
+                <h3 id="carh3">बैंगलोर</h3>
             </hgroup>
           </div>
         </div>
@@ -68,3 +68,54 @@
         </div>
       </div><!-- /.row -->
     </div><!-- /container marketing -->
+    <%= content_for :footer do %>
+        <div class="container">
+            <div class="row" id="aboutus">
+                <div class="col-sm-3">
+                    <ul id="footerlist">
+                    <h5 class="foothead">About Us</h5>
+                        <li class="footlink"><a href="#">About Us</a></li>
+                        <li class="footlink"><a href="#">Club Information</a></li>
+                        <li class="footlink"><a href="#">Misison Statement</a></li>
+                        <li class="footlink"><a href="#">Journey so Far</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul id="footerlist">
+                    <h5 class="foothead">Contact Us</h5>
+                        <li class="footlink"><a href="#">Contact Form</a></li>
+                        <li class="footlink"><a href="#">Executive Comittee</a></li>
+                        <li class="footlink"><a href="#">Trustee</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul id="footerlist">
+                    <h5 class="foothead">Advertisement</h5>
+                        <li class="footlink"><a href="#">Sponsors</a></li>
+                        <li class="footlink"><a href="#">Sponsor Form</a></li>
+                        <li class="footlink"><a href="#">Advertisement</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul id="footerlist">
+                    <h5 class="foothead">Community</h5>
+                        <li class="footlink"><a href="#">Get Involved</a></li>
+                        <li class="footlink"><a href="#">Charities</a></li>
+                        <li class="footlink"><a href="#">Social Support Group</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Here we use the Google Embed API to show Google Maps. -->
+            <!-- In order for this to work in your project you will need to generate a unique API key.  -->
+            <iframe id="map-container" frameborder="0" style="border:2px solid black"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbU60yXAWrjsR4E9-UejD3_g&key=AIzaSyBnKgvJ7b5maPy56J8lrE1CCC6SXWgr6fY&zoom=12" >
+            </iframe>
+        </div>
+        <div class="social-networks">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+        </div>
+    <% end %>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
