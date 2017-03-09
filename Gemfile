@@ -55,6 +55,7 @@ gem "less-rails"
 gem "twitter-bootstrap-rails"
 gem "gmaps4rails"
 gem "geocoder"
+gem 'paperclip'
 
 
 #END for Brandon
