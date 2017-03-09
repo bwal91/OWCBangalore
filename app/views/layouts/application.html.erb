@@ -30,8 +30,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    
-   
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= yield :stylesheet %>
@@ -94,7 +92,7 @@
                         <%= f.password_field :password, required: false, id: "inputs" %>
                          <%= f.submit "Login", id: "loginbutton", class: "btn btn-success" %>
                       <% end %>
-           
+
           <% end %>
         <% end %>
     <% end %>

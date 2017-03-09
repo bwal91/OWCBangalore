@@ -1,28 +1,28 @@
 get all content on pages
 Calendar https://console.developers.google.com/apis/library
 
-
-
 Charity map coordinates
-ACCEPT Society 12.9427008,77.5575775
-ASHA Foundation 13.0307574,77.5878761
-Asha Niketan 12.9564116,77.5581303
-Ashraya 12.9565396,77.5581302
-Bangalore Education Trust 13.0284257,77.556015
-Bangalore Hospice Trust - Karunashraya 12.9576561,77.7112055
-Belaku Trust 12.8986619,77.5732613
-Deena Seva Charitable Trust - Little Infant Jesus Home 12.9937626,77.5029529
-Divine Light Trust for the Blind 12.9878139,77.7289122
-Dominican Sisters of the Presentation 12.9881317,77.5975798
-Freedom Foundation 13.035328,77.620003
-Helpline Charitable Trust - Project ‘Vishwas’ 12.912816,77.5763253
-JAGRUTHI 12.9129181,77.5500604
-Jeevodaya - Child Care India 12.9132968,77.4449928
-Navachetana 12.9138915,77.4449922
-New Ark Mission - Home of Hope 13.0707172,77.6577911
-ProVISION Asia 13.0238332,77.6095733
+center of Bangalore 12°58'21.3"N 77°35'32.8"E
+
+ACCEPT Society 13°04'25.7"N 77°39'27.0"E
+ASHA Foundation 13°01'50.6"N 77°35'24.4"E
+Asha Niketan 12°57'00.6"N 77°34'50.0"E
+Ashraya 12°57'00.6"N 77°34'02.3"E
+Bangalore Education Trust 13°03'59.4"N 77°31'49.8"E
+Bangalore Hospice Trust - Karunashraya 12°57'27.5"N 77°42'48.4"E
+Belaku Trust 12°54'23.3"N 77°35'10.7"E
+Deena Seva Charitable Trust - Little Infant Jesus Home 13°03'45.1"N 77°39'06.8"E
+Divine Light Trust for the Blind 12°59'05.2"N 77°45'12.0"E
+Dominican Sisters of the Presentation 12°58'38.2"N 77°38'46.3"E
+Freedom Foundation 13°01'11.0"N 77°37'44.2"E
+Helpline Charitable Trust - Project ‘Vishwas’ 12°54'15.3"N 77°34'54.5"E
+JAGRUTHI 12°59'43.5"N 77°37'23.4"E
+Jeevodaya - Child Care India 13°01'10.2"N 77°38'09.1"E
+Navachetana 12°55'28.2"N 77°34'11.8"E
+New Ark Mission - Home of Hope 13°04'14.2"N 77°39'35.2"E
+ProVISION Asia 13°01'25.7"N 77°36'42.2"E
 Sai Shankar Loving Lights Trust
-Sheila Kothavala Inst. f. the Deaf (SKID) 12.9575251,77.6465147
-Shristi Special Academy 12.9587612,77.5166452
-Spastics Society of Karnataka 12.9809068,77.6397453
+Sheila Kothavala Inst. f. the Deaf (SKID) 12°57'27.0"N 77°38'55.4"E
+Shristi Special Academy 12°57'31.5"N 77°31'07.7"E
+Spastics Society of Karnataka 12°58'51.5"N 77°38'31.1"E
 Vision India

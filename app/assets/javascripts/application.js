@@ -6,7 +6,11 @@
 //= require gmaps/google
 //= require turbolinks
 //= require toastr
+
 //= require_tree .
+
+
+
 
  toastr.options = {
   "closeButton": true,
@@ -25,7 +29,7 @@
   "showMethod": "fadeIn",
   "hideMethod": "fadeOut"
   }
-
+  
 $(document).ready(function () {
   $('.navbar .dropdown').hover(function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);

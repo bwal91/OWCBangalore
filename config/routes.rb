@@ -63,6 +63,7 @@ Rails.application.routes.draw do
     # Start
   get '/charities_list', to: 'homes#charities_list', as: 'charities_list'
   get '/charity_map', to: 'homes#charity_map', as: 'charity_map'
+
   post '/add_location', to: 'locations#create', as: 'locations'
 
     # end
