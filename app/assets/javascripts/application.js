@@ -1,12 +1,13 @@
 //= require jquery
 //= require jquery_ujs
-//= require chosen-jquery
+//= require twitter/bootstrap
 //= require bootstrap.js
+//= require chosen-jquery
 //= require underscore
 //= require gmaps/google
 //= require turbolinks
 //= require toastr
-
+//= reqiure self
 //= require_tree .
 
 
@@ -115,6 +116,5 @@ $(function () {
     });
 
 });
-
 
 

@@ -6,8 +6,6 @@ git_source(:github) do |repo_name|
 end
 
   # Added by Kyle
-gem 'wdm', '>= 0.1.0'
-gem 'gmaps4rails'
 gem 'geokit-rails'
   # END
 
@@ -44,7 +42,6 @@ gem 'bootstrap-will_paginate'
 gem 'will_paginate'
 
 gem 'haml-rails'
-gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'mailboxer'
 gem 'jquery-ui-rails'

@@ -184,7 +184,6 @@ class HomesController < ApplicationController
       marker.infowindow render_to_string(:partial => "layouts/charities/popup", :locals => { :location => location})
 
     end
-    puts marker
 
     render :template => "layouts/charities/charity_map"
   end
