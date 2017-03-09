@@ -1,16 +1,32 @@
 
-
 .jumbotron {
-  max-height:500px;
-  overflow-y:auto;
-  width:1250px;
-  margin: auto;
-  margin-top: 100px;
-  margin-right: 50px;
-  margin-left: 150px;
-  z-index: 10px;
-  position: relative;
+    max-height:500px;
+    overflow-y:auto;
+    width:1250px;
+    margin: auto;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 150px;
+    z-index: 10px;
+    position: relative;
+    h1 {
+    	font-family: 'Noto Sans', serif;
+    	color: #333;
+    }
+    h4{
+        font-family: 'Noto Sans', serif;
+    	color: #333;
+    }
+    p {
+
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: #666;
+    }
+
 }
+
 
 .fade-carousel {
     position: relative;
@@ -100,7 +116,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  
+
 }
 .fade-carousel .slides .slide-1 {
   background-image: url(/assets/bangalore1.jpg);
@@ -1080,4 +1096,3 @@ display: block;
 #foot-links>li:not(:first-child):before {
     content: " / ";
 }
-
