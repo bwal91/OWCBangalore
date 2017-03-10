@@ -3,14 +3,12 @@
 //= require twitter/bootstrap
 //= require bootstrap.js
 //= require chosen-jquery
-//= require underscore
 //= require gmaps/google
+//= require underscore
 //= require turbolinks
 //= require toastr
 //= reqiure self
 //= require_tree .
-
-
 
 
  toastr.options = {
@@ -38,6 +36,8 @@ $(document).ready(function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
     });
 });
+
+
   // SIDE BAR JAVASCRIPT https://codepen.io/j_holtslander/pen/XmpMEp uploaded by Kyle
 $(document).ready(function () {
   var trigger = $('.hamburger'),
@@ -116,5 +116,27 @@ $(function () {
     });
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

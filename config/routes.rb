@@ -9,7 +9,6 @@ Rails.application.routes.draw do
     get '/change_password', :to => 'devise/passwords#new', :as => :change_password
   end
   root to: 'homes#index' # Home page
-  get '/', to: 'homes#index', as: 'home'
   get '/back', to: 'homes#index' # Back button option
   # Bangalore dropdown navigation bar*
   get '/moving_to', to: 'homes#moving_to', :as => :moving_to

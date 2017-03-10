@@ -180,11 +180,11 @@ class HomesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
       marker.lat location.latitude
       marker.lng location.longitude
-      marker.json({:id => location.id})
-      marker.infowindow render_to_string(:partial => "layouts/charities/popup", :locals => { :location => location})
-
+      marker.title location.title
+      window = render_to_string(:partial => "layouts/charities/popup", :locals => { :location => location})
+      marker.infowindow window
     end
-
+    puts @hash
     render :template => "layouts/charities/charity_map"
   end
     # end

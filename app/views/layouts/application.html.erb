@@ -24,11 +24,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="/assets/bootstrap.min.css" media="all" rel="stylesheet" />
-    <link rel="stylesheet" href="homes.scss">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link href="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -48,7 +45,7 @@
     <style type="text/css">body { margin: 0; padding-top: 80px; height: 100%; font-family: 'Open Sans',Arial,sans-serif;}</style>
   <%= nav_bar brand: image_tag("owclogo.png"), fixed: :top, responsive: true do %>
     <%= menu_group do %>
-        <%= menu_item "Home", home_path %>
+        <%= menu_item "Home", root_path %>
         <%= drop_down "Bangalore" do %>
             <%= menu_item "Moving to Bangalore", moving_to_path %>
             <%= menu_item "Life if Bangalore", life_in_path %>

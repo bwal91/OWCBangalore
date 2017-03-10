@@ -5,19 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-<<<<<<< HEAD
-  # Added by Kyle
-gem 'geokit-rails'
-  # END
 
-=======
->>>>>>> 43794533c42c52fb2bcad32c132c6c703d4c6067
 gem 'mail_form'
 gem 'hirb'
 gem 'rails', '~> 5.0.1'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '5.0.6'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 
@@ -57,7 +51,8 @@ gem 'normalize-rails'
 gem 'binding_of_caller'
 gem 'letter_opener', :group => :development
 gem "therubyracer"
-gem "less-rails"
+gem 'less-rails', git: 'https://github.com/Genkilabs/less-rails' #fix for deprecated Sprockets ImportProcessor
+gem 'sprockets', '3.6.3'
 gem "twitter-bootstrap-rails"
 gem "gmaps4rails"
 gem "geocoder"
