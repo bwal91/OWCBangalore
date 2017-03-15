@@ -1,0 +1,880 @@
+/* line 2, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.btn-success {
+  margin-left: 20px;
+  padding: 0px;
+  height: 30px;
+  width: 100px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+}
+
+/* line 10, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#message_pic {
+  max-height: 64px;
+  max-width: 64px;
+}
+
+/* line 14, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.spacer {
+  margin-top: 20px;
+}
+
+/* line 17, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#message_box {
+  overflow: auto;
+  max-height: 500px;
+}
+
+/* line 22, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.edit_profile {
+  text-align: center;
+  margin-right: 15px;
+}
+
+/* NAVBAR
+-------------------------------------------------- */
+/* line 40, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-image: -webkit-linear-gradient(top, #84b451 0%, #84b451 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#84b451), to(#84b451));
+  background-image: linear-gradient(to bottom, #84b451 0%, #84b451 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+  background-color: #84b451;
+}
+
+/* line 51, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default {
+  background-image: -webkit-linear-gradient(top, #9dc375 0%, #84b451 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9dc375), to(#84b451));
+  background-image: linear-gradient(to bottom, #9dc375 0%, #84b451 100%);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+}
+
+/* line 64, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a {
+  background-image: -webkit-linear-gradient(top, #84b451 0%, #84b451 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#84b451), to(#84b451));
+  background-image: linear-gradient(to bottom, #84b451 0%, #84b451 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+  background-color: #84b451;
+}
+
+/* line 75, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-brand {
+  width: 100px;
+  max-height: 70px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+  left: 5;
+  margin-left: -90px;
+}
+
+/* line 84, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-brand > img {
+  display: inline-block;
+  max-height: 70px;
+  left: 5;
+  margin-left: -90px;
+}
+
+/* line 90, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  font-size: 19px;
+  color: white;
+}
+
+/* line 97, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+/* line 101, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+/* line 106, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+/* line 111, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav > li.disabled > a {
+  color: white;
+}
+
+/* line 121, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #337ab7;
+}
+
+/* line 127, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+/* line 133, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav > li > a > img {
+  max-width: none;
+}
+
+/* line 136, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 139, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+/* line 143, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 149, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+
+/* line 153, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+/* line 163, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+
+/* line 167, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+
+/* line 170, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* line 174, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+/* line 187, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+
+/* line 191, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+
+/* line 209, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-stacked > li {
+  float: none;
+}
+
+/* line 212, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+/* line 216, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-justified {
+  width: 100%;
+}
+
+/* line 219, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-justified > li {
+  float: none;
+}
+
+/* line 222, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* line 226, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+
+/* line 239, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs-justified {
+  border-bottom: 0;
+}
+
+/* line 242, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+
+/* line 246, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+
+/* line 263, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar {
+  position: relative;
+  min-height: 80px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+/* line 279, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-collapse {
+  overflow-x: visible;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 288, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-collapse.in {
+  overflow-y: auto;
+}
+
+/* line 314, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: auto;
+}
+
+/* line 324, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* line 340, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px;
+}
+
+/* line 349, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* line 362, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+/* line 366, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+
+/* line 371, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-brand {
+  font-size: 18px;
+  height: 80px;
+  display: inline-block;
+  width: 100px;
+  margin-top: 3px;
+}
+
+/* line 380, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+
+/* line 394, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* line 406, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-toggle:focus {
+  outline: 0;
+}
+
+/* line 409, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+/* line 415, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/* line 423, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-nav {
+  margin: 15px -15px;
+}
+
+/* line 426, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+/* line 467, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-form {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 548, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-radius: 5px;
+  opacity: 0.75;
+}
+
+/* line 555, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 562, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-btn {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+/* line 566, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-btn.btn-sm {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 570, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-btn.btn-xs {
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+
+/* line 574, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 597, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default {
+  background-color: #84b451;
+  border-color: #739f45;
+}
+
+/* line 601, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-brand {
+  color: white;
+  display: inline-block;
+}
+
+/* line 605, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+
+/* line 610, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-text {
+  color: #84b451;
+}
+
+/* line 613, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+/* line 616, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333333;
+  background-color: transparent;
+}
+
+/* line 621, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555555;
+  background-color: #739f45;
+}
+
+/* line 627, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+
+/* line 633, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-toggle {
+  border-color: #dddddd;
+}
+
+/* line 636, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+
+/* line 640, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888888;
+}
+
+/* line 643, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #739f45;
+}
+
+/* line 647, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #739f45;
+  color: #555555;
+}
+
+/* line 676, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-link {
+  color: white;
+}
+
+/* line 679, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .navbar-link:hover {
+  color: #333333;
+}
+
+/* line 682, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .btn-link {
+  color: white;
+}
+
+/* line 685, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: #333333;
+}
+
+/* line 689, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.navbar-default .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-default .btn-link:hover,
+.navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-default .btn-link:focus {
+  color: #84b451;
+}
+
+/* line 695, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* line 699, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#login {
+  margin-left: 480px;
+}
+
+/* line 703, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#logbut {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+/* line 708, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#pass {
+  margin-top: 10px;
+}
+
+/* line 711, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.loginbox {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+  color: black;
+  margin-top: 0;
+  border-top: 0;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 0px;
+  width: 300px;
+  height: 200px;
+}
+
+/* line 725, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.form-inputs {
+  color: white;
+}
+
+/* line 728, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#loginbutton {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  -webkit-filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0);
+          filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #e6e6e6;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+}
+
+/* line 731, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#inputs {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #999999;
+  border: 1px solid #999999;
+  outline: none;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+  -webkit-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+}
+
+/* line 750, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#inputs:focus {
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* line 753, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#loggedin {
+  margin-left: 185px;
+}
+
+/* line 756, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#loggedin > li > a {
+  margin-right: 18px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 761, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#loggedinadmin {
+  margin-left: 75px;
+}
+
+/* line 764, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#loggedinadmin > li > a {
+  margin-right: 18px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 769, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.badge {
+  height: 25px;
+  font-size: 17px;
+}
+
+/* line 777, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter {
+  background-color: #84B451;
+  color: white;
+  margin-top: 20px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* line 787, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#map-container {
+  height: 240px;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* line 797, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .row {
+  margin: 0 85px;
+}
+
+/* line 801, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .footer-copyright {
+  background-color: #10222e;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  max-height: 45px;
+  bottom: 0;
+}
+
+/* line 809, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .footer-copyright > p {
+  margin: 10px;
+  color: #ccc;
+  display: inline-block;
+}
+
+/* line 814, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#time {
+  display: inline-block;
+  margin-left: 12%;
+  bottom: 0;
+}
+
+/* line 819, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .container {
+  width: auto;
+}
+
+/* line 822, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#aboutus {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* line 826, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#footerlist > ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.7;
+}
+
+/* line 831, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.footlink {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* line 836, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.footlink > a {
+  color: white;
+}
+
+/* line 840, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.foothead {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/* line 847, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter > a {
+  color: #d2d1d1;
+  text-decoration: none;
+}
+
+/* line 852, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter > a:hover,
+#myFooter > a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 858, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .social-networks {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 38px;
+}
+
+/* line 864, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .fa {
+  font-size: 30px;
+  margin-right: 15px;
+  margin-left: 20px;
+  background-color: white;
+  color: #182c39;
+  border-radius: 51%;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 31px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+/* line 880, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .fa-facebook:hover {
+  color: #2b55ff;
+}
+
+/* line 884, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .fa-facebook:focus {
+  color: #2b55ff;
+}
+
+/* line 888, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .fa-google-plus:hover {
+  color: red;
+}
+
+/* line 892, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .fa-google-plus:focus {
+  color: red;
+}
+
+/* line 896, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .fa-twitter:hover {
+  color: #00aced;
+}
+
+/* line 900, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter .fa-twitter:focus {
+  color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 905, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+  #myFooter {
+    text-align: center;
+  }
+
+  /* line 908, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+  #myFooter .row {
+    margin: 0;
+  }
+}
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+/* line 918, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  min-height: 200px;
+}
+
+/* line 924, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#myFooter {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+/* line 928, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#foot-links {
+  margin-left: 17%;
+  display: inline-block;
+  bottom: 0;
+}
+
+/* line 933, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#foot-links > ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 939, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#foot-links > ul > li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 5px;
+}
+
+/* line 945, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#foot-links > ul > li > a {
+  color: white;
+}
+
+/* line 948, /Users/Brandon/Desktop/CodingDojo/Ruby/OWCBangalore/app/assets/stylesheets/mailbox.scss */
+#foot-links > li:not(:first-child):before {
+  content: " / ";
+}
