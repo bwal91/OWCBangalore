@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+# gem 'sqlite3'
+gem 'pg'
 gem 'mail_form'
 gem 'hirb'
 gem 'rails', '~> 5.0.1'
@@ -57,7 +58,7 @@ gem "gmaps4rails"
 gem "geocoder"
 gem 'paperclip'
 gem 'taps'
-gem 'pg'
+# gem 'pg'
 
 #END for Brandon
 
