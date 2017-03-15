@@ -1,6 +1,10 @@
 body {
   height: 100%;
 }
+.content {
+  height: 100%;
+}
+
 //-- Sidebar Page --//
 #main-wrapper {
   min-height: 560px;
@@ -142,28 +146,37 @@ body {
     .hero h1 { font-size: 4em; }
 }
 //-- Charity Map --//
-#map-wrapper {
-  width: 1100px;
-  height: 610px;
-  margin-top: 30px;
-  margin-left: 300px;
-  padding: 0px;
+// #map-wrapper {
+//   width: 1100px;
+//   height: 610px;
+//   margin-top: 30px;
+//   margin-left: 300px;
+//   padding: 0px;
+//   display: inline-block;
 
+// }
+#charity-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
+//-- Charity Map SideBar --//
+#sidebar_container {
+  display: inline-block;
+  width: 200px;
+  margin-top: 20px;
+ 
+}
+//-- Charity Map --//
 #map {
+  display: inline-block;
   width: 1000px;
   height: 600px;
+  padding: 0;
+  margin: 0;
   border: 4px solid black;
   border-radius: 10px;
 }
-#add-location {
-  margin-top: 0px;
-  margin-left: 400px;
-  margin-right: 40px;
-  display: inline-block;
-}
-
-
 
 
 
@@ -406,7 +419,7 @@ body {
 .navbar {
   position: relative;
   min-height: 80px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   border: 1px solid transparent;
 }
 // @media (min-width: 768px) {
@@ -1067,6 +1080,7 @@ display: block;
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
+   bottom: 0;
 }
 #foot-links {
   margin-left: 17%;

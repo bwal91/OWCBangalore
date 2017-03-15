@@ -1,19 +1,19 @@
-<%= content_for :stylesheet do %>
-  <%= stylesheet_link_tag 'info', media: 'all', 'data-turbolinks-track': 'reload'  %>
-<% end %>
 <script src="//maps.google.com/maps/api/js?key=AIzaSyChu5TaHmlYjg1um6R9zwMqfJQT_EFAwrU"></script>
 <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
 <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js'> </script>
-  <style type="text/css">body {height: 100%; overflow: auto;}</style>     
-    <div style='width: 800px;' id="map-wrapper">
-      <div id="map"></div>
-    </div>
-    <div id='sidebar_container'>
-    </div>
+<%= content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'info', media: 'all', 'data-turbolinks-track': 'reload'  %>
+<% end %>
+<div id="charity-wrapper">
+    <div id='sidebar_container'></div>
+
+    <div id="map"></div>
+</div>
+
 
 <script type="text/javascript">
 function createSidebarLi(json){
-  return ("<li><a>" + json.name + "</a></li>");
+  return ("<li><a>" + json.marker_title + "</a></li>");
 };
 
 function bindLiToMarker($li, marker){
@@ -35,9 +35,8 @@ function createSidebar(json_array){
 
 handler = Gmaps.build('Google');
 handler.buildMap({ internal: {id: 'map'}}, function(){
-  var json_array = [
-  <%=raw @hash.to_json %>
-  ];
+  var json_array = <%= raw @hash.to_json %>;
+  
 
   var markers = handler.addMarkers(json_array);
 
@@ -50,23 +49,3 @@ handler.buildMap({ internal: {id: 'map'}}, function(){
   handler.fitMapToBounds();
 });
 </script>
-
-
-<!-- <script type="text/javascript">
-handler = Gmaps.build('Google');
-handler.buildMap({ provider: { zoom: 10}, internal: {id: 'map'}}, 
-  function(){
-      markers = handler.addMarkers(<%=raw @hash.to_json %>);
-
-  handler.bounds.extendWith(markers);
-  handler.fitMapToBounds();
-  
-  
-});
-Gmaps.map.callback = function(){
-  console.log('callback');
-  $(document).trigger('map:ready');
-}
-</script> -->
-
-

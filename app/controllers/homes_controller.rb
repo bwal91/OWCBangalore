@@ -181,10 +181,9 @@ class HomesController < ApplicationController
       marker.lat location.latitude
       marker.lng location.longitude
       marker.title location.title
-      window = render_to_string(:partial => "layouts/charities/popup", :locals => { :location => location})
-      marker.infowindow window
+     
+      marker.infowindow render_to_string(:partial => "layouts/charities/popup", :locals => { :location => location})
     end
-    puts @hash
     render :template => "layouts/charities/charity_map"
   end
     # end
