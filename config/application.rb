@@ -18,6 +18,8 @@ module OWCBangalore
     config.time_zone = 'Mumbai'
 
     config.autoload_paths += %W(#{config.root}/lib)
+
+    
   end
 end
 # (1277333, Weather::Units::CELSIUS)
