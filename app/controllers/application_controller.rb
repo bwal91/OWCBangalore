@@ -11,15 +11,13 @@ class ApplicationController < ActionController::Base
 	before_action :configure_permitted_parameters, if: :devise_controller?
 	
 	rescue_from CanCan::AccessDenied do |exception|
-    redirect_to main_app.root_path, :alert => exception.message
-
-
+    	redirect_to root_url, :alert => exception.message
   	end
 	
 	def after_sign_in_path_for(resource)
 	    :root
 	end
-
+# main_app.root_path
 
 	private
 
