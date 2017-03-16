@@ -23,6 +23,11 @@
 # production:
 #   <<: *default
 #   database: db/production.sqlite3
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: ""
 
 development:
   adapter: postgresql
@@ -41,6 +46,10 @@ test:
   username: Brandon
   password: "password"
   timeout: 5000
+
+production:
+  <<: *default
+  database: this_production
 
 # # Warning: The database defined as "test" will be erased and
 # # re-generated from your development database when you run "rake".

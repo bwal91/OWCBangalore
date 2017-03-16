@@ -30,6 +30,7 @@ class HomesController < ApplicationController
   def accomodations
     respond_to do |format|
         format.js
+        format.html
     end
   end
   def safe_environments
