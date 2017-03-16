@@ -80,12 +80,11 @@ test:
 #
 production:
   <<: *default
-  database: d7v975hgg0nko8
-  url: database_url
-  username: nduohumbkfzutc
+  url: postgres://nduohumbkfzutc:eff65d93bf9086db6f033f5767a4e964ac34f26a63827d948009b251e23a0fd2@ec2-54-225-127-147.compute-1.amazonaws.com:5432/d7v975hgg0nko8
+  username: "nduohumbkfzutc"
   password: database_password
 
-  
+
 # //-- Old Stuff --//
 # SQLite version 3.x
 #   gem install sqlite3
