@@ -5,7 +5,7 @@ class User < ApplicationRecord
 
 	acts_as_messageable
 
-	after_create :send_admin_mail
+	# after_create :send_admin_mail
 
 	attr_accessor :login
 
@@ -21,9 +21,9 @@ class User < ApplicationRecord
 		self[:first_name]+" "+self[:last_name]
 	end
 	
-	def send_admin_mail
-	  UserMailer.send_welcome_email(self).deliver_now
-	end
+	# def send_admin_mail
+	#   UserMailer.send_welcome_email(self).deliver_now
+	# end
 
 	def self.find_for_database_authentication(warden_conditions)
       conditions = warden_conditions.dup
