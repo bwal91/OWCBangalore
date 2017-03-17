@@ -158,22 +158,42 @@ body {
 #charity-wrapper {
   width: 100%;
   height: 100%;
-  position: relative;
+  padding-top: 30px;
+  overflow: hidden;
+
 }
 //-- Charity Map SideBar --//
 #sidebar_container {
   display: inline-block;
   width: 200px;
+  height: 70%;
   margin-top: 20px;
+  margin-left: 5%;
+  vertical-align: top;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  background-color: #c5d1bb;
+  overflow: auto;
  
+}
+#sidebar_container>li {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#sidebar_container>li>a {
+  font-size: 15px;
+  color: #107896;
 }
 //-- Charity Map --//
 #map {
+  position: fixed;
   display: inline-block;
   width: 1000px;
   height: 600px;
   padding: 0;
-  margin: 0;
+  margin-left: 5%;
   border: 4px solid black;
   border-radius: 10px;
 }

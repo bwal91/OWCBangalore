@@ -45,11 +45,11 @@ gem 'jquery-ui-rails'
 gem 'toastr-rails'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin'
+gem 'rails_admin_rollincode', '~> 1.0'
 gem 'cancancan'
 gem 'load_and_authorize_resource'
 gem 'normalize-rails'
 gem 'binding_of_caller'
-gem 'letter_opener', :group => :development
 gem "therubyracer"
 gem 'less-rails', git: 'https://github.com/Genkilabs/less-rails' #fix for deprecated Sprockets ImportProcessor
 gem 'sprockets', '3.6.3'
@@ -58,7 +58,7 @@ gem "gmaps4rails"
 gem "geocoder"
 gem 'paperclip'
 gem 'taps'
-# gem 'pg'
+
 
 #END for Brandon
 

@@ -1,4 +1,4 @@
-
+var hash = '<%= raw @hash.to_json %>'
 function createSidebarLi(json){
   return ("<li><a>" + json.name + "</a></li>");
 };
@@ -23,7 +23,7 @@ function createSidebar(json_array){
 handler = Gmaps.build('Google');
 handler.buildMap({ internal: {id: 'map'}}, function(){
   var json_array = [
-    <%= raw @hash.to_json %>
+    hash
   ];
 
   var markers = handler.addMarkers(json_array);

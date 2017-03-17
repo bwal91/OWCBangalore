@@ -15,23 +15,23 @@ ActiveRecord::Schema.define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   # enable_extension "plpgsql"
 
-  create_table "Payments", force: :cascade do |t|
-    t.string   "date_payment"
-    t.string   "date_treasury"
-    t.string   "trans_date"
-    t.string   "expiration_date"
-    t.string   "online"
-    t.string   "confirmation_number"
-    t.string   "leaving_date"
-    t.string   "receipt_number"
-    t.string   "receipt_book"
-    t.string   "amount_paid"
-    t.string   "receipted_by"
-    t.string   "data_base_input"
-    t.string   "comments"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
-  end
+  # create_table "Payments", force: :cascade do |t|
+  #   t.string   "date_payment"
+  #   t.string   "date_treasury"
+  #   t.string   "trans_date"
+  #   t.string   "expiration_date"
+  #   t.string   "online"
+  #   t.string   "confirmation_number"
+  #   t.string   "leaving_date"
+  #   t.string   "receipt_number"
+  #   t.string   "receipt_book"
+  #   t.string   "amount_paid"
+  #   t.string   "receipted_by"
+  #   t.string   "data_base_input"
+  #   t.string   "comments"
+  #   t.datetime "created_at",          null: false
+  #   t.datetime "updated_at",          null: false
+  # end
 
   create_table "locations", force: :cascade do |t|
     t.string   "address"
