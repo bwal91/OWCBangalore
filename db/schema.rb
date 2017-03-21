@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170321180411) do
+ActiveRecord::Schema.define(version: 20170321181058) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20170321180411) do
     t.string   "email"
     t.string   "website"
     t.string   "contact"
-    t.string   "text"
     t.string   "phone"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
@@ -34,6 +33,7 @@ ActiveRecord::Schema.define(version: 20170321180411) do
     t.datetime "image_updated_at"
     t.string   "owc_contact"
     t.text     "donation_requirments"
+    t.text     "volunteer"
   end
 
   create_table "mailboxer_conversation_opt_outs", force: :cascade do |t|
