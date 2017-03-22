@@ -1,20 +1,34 @@
+<% if request.variant == :phone %>
+  <% render :error %>
+<% end %>
 <script src="//maps.google.com/maps/api/js?key=AIzaSyChu5TaHmlYjg1um6R9zwMqfJQT_EFAwrU"></script>
 <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
 <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js'> </script>
 <%= content_for :stylesheet do %>
   <%= stylesheet_link_tag 'info', media: 'all', 'data-turbolinks-track': 'reload'  %>
 <% end %>
-<style type="text/css">body { background: url("assets/bwbangalore.png"); height: 100%;}</style>
-<div id="charity-wrapper">
-    <div id='sidebar_container'></div>
+<style type="text/css">body{height: 100%; overflow: hidden; background: url("assets/bwbangalore.png")} #myFooter {bottom: 0; position: fixed; width: 100%;}</style>
+  
+  <div id="charity-wrapper">
 
-    <div id="map"></div>
-</div>
+    <div id="map">
+      <!-- map display -->
+    </div>
+
+    <div id="charity-sidebar">
+
+      <div class="list-group" id="sidebar_container">
+        <!-- map sidebar list  -->
+      </div>
+
+    </div>
+
+  </div>
 
 
 <script type="text/javascript">
 function createSidebarLi(json){
-  return ("<li><a>" + json.marker_title + "</a></li>");
+  return ("<a class='list-group-item'>" + json.marker_title + "</a>");
 };
 
 function bindLiToMarker($li, marker){

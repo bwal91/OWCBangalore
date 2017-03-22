@@ -13,5 +13,6 @@
     </h4>
     <%= truncate conversation.messages.last.body, length: 145 %>
     <%= link_to "View", conversation_path(conversation)  %>
+    <%= conversation.id %>
   </div>
 </div>

@@ -58,7 +58,7 @@
             <%= menu_item "Public Calendar", public_calendar_path %>
         <% end %>
         <%= drop_down "Our Work" do %>
-            <%= menu_item "Charities" %>
+            <%= menu_item "Charities", charity_map_path %>
             <%= menu_item "Contributions" %>
             <%= menu_item "Fundraising" %>
             <%= menu_item "Social Support Group" %>
@@ -74,8 +74,12 @@
     <% end %>
     <%= menu_group pull: :right do %>
         <% if current_user %>
-          <%= menu_item "Hello, #{current_user.first_name}" %>
-          <%= menu_item "Inbox", mailbox_inbox_path %>
+            <%= menu_item "Hello, #{current_user.first_name}" %>
+            <%= drop_down "<i class='fa fa-envelope fa-fw'></i>(#{unread_messages_count})" do %>
+                
+                    <%= menu_item render partial: 'layouts/dropinbox' %>
+                
+            <% end %>
             <% if current_user.superadmin_role == true %>
             <%= menu_item "Admin", rails_admin_path %>
             <% end %>

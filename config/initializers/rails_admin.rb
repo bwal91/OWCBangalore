@@ -6,7 +6,13 @@ RailsAdmin.config do |config|
     redirect_to main_app.root_path, :alert => "You are not authorized" unless current_user.superadmin_role? || current_user.supervisor_role?
   end
 
-
+  config.model 'Visit' do
+    visible false
+  end
+  config.model 'Events' do
+    visible false
+  end
+ 
   # config.authorize_with do
   #   redirect_to main_app.root_path unless current_user.superadmin_role?
   # end

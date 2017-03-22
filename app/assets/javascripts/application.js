@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery_ujs
+//= require ahoy
 //= require twitter/bootstrap
 //= require bootstrap.js
 //= require chosen-jquery

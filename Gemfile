@@ -58,8 +58,12 @@ gem "gmaps4rails"
 gem "geocoder"
 gem 'paperclip'
 gem 'taps'
-
-
+gem 'browser'
+gem 'ahoy_matey'
+gem 'chartkick'
+gem 'groupdate'
+gem 'blazer'
+gem 'pghero'
 #END for Brandon
 
 

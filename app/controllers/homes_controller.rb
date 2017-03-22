@@ -4,6 +4,9 @@ class HomesController < ApplicationController
   # Home Page
   def index
   end
+  def test
+    render :template => "layouts/dropinbox"
+  end
   def login
   end
   # Bangalore dropdown bar
@@ -177,6 +180,7 @@ class HomesController < ApplicationController
     end
   end
   def charity_map
+    @back_url = session[:my_previous_url]
     @locations = Location.all
     @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
       marker.lat location.latitude
@@ -186,6 +190,11 @@ class HomesController < ApplicationController
       marker.infowindow render_to_string(:partial => "layouts/charities/popup", :locals => { :location => location})
     end
     render :template => "layouts/charities/charity_map"
+  end
+
+  def no_mobile
+    @back_url = session[:my_previous_url]
+    render :template => "layouts/error"
   end
     # end
   # Our Work dropdown navigation bar

@@ -61,6 +61,19 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
+    ahoy_matey (1.5.4)
+      addressable
+      browser (~> 2.0)
+      geocoder
+      rack-attack (< 6)
+      railties
+      referer-parser (>= 0.3.0)
+      request_store
+      safely_block (>= 0.1.1)
+      user_agent_parser
+      uuidtools
     arel (7.1.4)
     autoprefixer-rails (6.7.7)
       execjs
@@ -72,11 +85,16 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    blazer (1.7.9)
+      chartkick
+      rails
+      safely_block (>= 0.1.1)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     bootstrap-will_paginate (0.0.11)
       will_paginate
+    browser (2.3.0)
     builder (3.2.3)
     byebug (9.0.6)
     cancancan (1.16.0)
@@ -84,6 +102,7 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
+    chartkick (2.2.3)
     childprocess (0.6.2)
       ffi (~> 1.0, >= 1.0.11)
     chosen-rails (1.5.2)
@@ -110,6 +129,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    errbase (0.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
@@ -122,6 +142,8 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     gmaps4rails (2.1.2)
+    groupdate (3.2.0)
+      activesupport (>= 3)
     haml (4.0.7)
       tilt
     haml-rails (0.9.0)
@@ -189,8 +211,13 @@ GEM
       mimemagic (~> 0.3.0)
     pg (0.20.0)
     pg (0.20.0-x86-mingw32)
+    pghero (1.6.4)
+      activerecord
+    public_suffix (2.0.5)
     puma (3.8.2)
     rack (2.0.1)
+    rack-attack (5.0.1)
+      rack
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
       rack (>= 1.1)
@@ -240,6 +267,8 @@ GEM
       ffi (>= 0.5.0)
     redis (3.3.3)
     ref (2.0.0)
+    referer-parser (0.3.0)
+    request_store (1.3.2)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     rest-client (1.6.9)
@@ -247,6 +276,8 @@ GEM
     ruby_parser (3.8.4)
       sexp_processor (~> 4.1)
     rubyzip (1.2.1)
+    safely_block (0.2.0)
+      errbase
     sass (3.4.23)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -297,6 +328,8 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (3.1.8)
       execjs (>= 0.3.0, < 3)
+    user_agent_parser (2.3.0)
+    uuidtools (2.1.5)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.4.0)
@@ -315,14 +348,18 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  ahoy_matey
   autoprefixer-rails
   bcrypt (~> 3.1.7)
   better_errors
   binding_of_caller
+  blazer
   bootstrap-sass
   bootstrap-will_paginate
+  browser
   byebug
   cancancan
+  chartkick
   childprocess (~> 0.5)
   chosen-rails
   coffee-rails (~> 4.2)
@@ -330,6 +367,7 @@ DEPENDENCIES
   font-awesome-sass
   geocoder
   gmaps4rails
+  groupdate
   haml-rails
   hirb
   jbuilder (~> 2.5)
@@ -343,6 +381,7 @@ DEPENDENCIES
   normalize-rails
   paperclip
   pg
+  pghero
   puma (~> 3.0)
   rails (~> 5.0.1)
   rails_admin

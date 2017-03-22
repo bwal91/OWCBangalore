@@ -1,0 +1,13 @@
+<% current_user.mailbox.inbox(:unread => true).each do |conversation| %>
+<div>
+<h4>
+  <span style="color: blue;"><%= conversation.originator.full_name %></span> <br>
+  <small><b>Subject: </b><%= conversation.subject %></small><br>
+  <small><b>Date: </b><%=  conversation.messages.last.created_at.strftime("%A, %b %d, %Y at %I:%M%p") %></small>
+</h4>
+<span style="color: blue;"><%= truncate conversation.messages.last.body, length: 145 %></span>
+</div>
+<li class="divider"></li>
+<% end %>
+<a href="<%= mailbox_inbox_path %>"><h3 style="text-align: center;">Read All Messages > </h3></a>
+

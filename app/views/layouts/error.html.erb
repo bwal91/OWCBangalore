@@ -1,0 +1,12 @@
+<%= content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'info', media: 'all', 'data-turbolinks-track': 'reload'  %>
+<% end %>
+<style type="text/css">
+body{height: 100%; overflow: hidden; background: url("assets/bwbangalore.png");} #myFooter {bottom: 0; position: fixed; width: 100%;}</style>
+<div id="nomobile-wrapper">
+	<div id="mobile">
+		<h1 class="mobile-text" style="font-size: 60px;"> Oh No! </h1>
+		<h2 class="mobile-text"> Unfortunately this page is only available <br> when viewed on a Desktop </h2>
+		<%= link_to 'Go Back', url_for(:back), class: "btn btn-primary btn-lg", role: "button" %>
+	</div>
+</div>

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  mount Blazer::Engine, at: "blazer"
+  mount PgHero::Engine, at: "pghero"
   devise_scope :user do
     get '/login', :to => 'devise/sessions#new', :as => :login
     post '/login_user', :to => 'devise/sessions#create', :as => :login_user
@@ -98,11 +100,13 @@ Rails.application.routes.draw do
   # match '/contacts', to: 'contacts#new', via: 'get'
   # resources "contacts", only: [:new, :create]
   get '/profile', to: 'users#profile'
-
+  get '/no_mobile', to: 'homes#no_mobile', as: 'no_mobile'
   get '/payments', to: 'payments#index'
   		resources :payments do
 		collection {post :import}
 	end
+
+  get '/test', to: 'homes#test'
 
   # resources :users do
   #   get :autocomplete_:recipients_:first_name,:last_name, :on => :collection

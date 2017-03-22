@@ -8,10 +8,12 @@ class ApplicationController < ActionController::Base
 	
 	before_action :configure_permitted_parameters, if: :devise_controller?
 	
-	
+	before_action :detect_device_variant
+
 	def after_sign_in_path_for(resource)
 	    :root
 	end
+	
 
 	private
 
@@ -22,6 +24,10 @@ class ApplicationController < ActionController::Base
 
   	def conversation
     	@conversation ||= mailbox.conversations.find(params[:id])
+  	end
+
+  	def detect_device_variant
+    	request.variant = :phone if browser.device.mobile?
   	end
 
 	protected
