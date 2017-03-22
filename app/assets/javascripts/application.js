@@ -1,10 +1,14 @@
 //= require jquery
-//= require jquery_ujs
 //= require ahoy
+//= require jquery_ujs
+//= require Chart.bundle
+//= require chartkick
 //= require twitter/bootstrap
 //= require bootstrap.js
 //= require chosen-jquery
 //= require gmaps/google
+//= require gulpfile
+//= require sb-admin-2
 //= require underscore
 //= require turbolinks
 //= require toastr

@@ -106,7 +106,7 @@ Rails.application.routes.draw do
 		collection {post :import}
 	end
 
-  get '/test', to: 'homes#test'
+  get '/ahoy', to: 'ahoy#index', as: 'ahoy'
 
   # resources :users do
   #   get :autocomplete_:recipients_:first_name,:last_name, :on => :collection

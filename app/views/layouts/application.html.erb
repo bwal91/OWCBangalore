@@ -81,7 +81,10 @@
                 
             <% end %>
             <% if current_user.superadmin_role == true %>
-            <%= menu_item "Admin", rails_admin_path %>
+                <%= drop_down "Admin" do %>
+                    <%= menu_item "Admin Dashboard", rails_admin_path %>
+                    <%= menu_item "Analytics", ahoy_path %>
+                <% end %>
             <% end %>
             <%= menu_item "Log Out", destroy_session_path %>
         <% else %>
@@ -123,4 +126,14 @@
     
 </div>
   </body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96027501-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>

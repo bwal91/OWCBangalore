@@ -1,13 +1,15 @@
-<% current_user.mailbox.inbox(:unread => true).each do |conversation| %>
-<div>
-<h4>
-  <span style="color: blue;"><%= conversation.originator.full_name %></span> <br>
-  <small><b>Subject: </b><%= conversation.subject %></small><br>
-  <small><b>Date: </b><%=  conversation.messages.last.created_at.strftime("%A, %b %d, %Y at %I:%M%p") %></small>
-</h4>
-<span style="color: blue;"><%= truncate conversation.messages.last.body, length: 145 %></span>
-</div>
-<li class="divider"></li>
-<% end %>
-<a href="<%= mailbox_inbox_path %>"><h3 style="text-align: center;">Read All Messages > </h3></a>
 
+<style type="text/css">#read-all {color: black; font-weight: bolder; font-size: 10pt;}</style>
+<% current_user.mailbox.inbox(:unread => true).each do |conversation| %>
+	
+	<div>
+		<h4>
+		  <span style="color: blue;"><%= conversation.originator.full_name %></span><span style="color: black; font-size: 11px; float: right; font-style: italic;"> <%=  conversation.messages.last.created_at.strftime("%b %d, %Y") %></span> <br>
+		</h4>
+		<span style="text-align: center;"><%= truncate conversation.messages.last.body, length: 145 %></span>
+	</div>
+	<li class="divider"></li>
+<% end %>
+	<div style="text-align: center;">
+	<a href="<%= mailbox_inbox_path %>" id="read-all"> Read All Messages &#62; </a>
+	</div>
