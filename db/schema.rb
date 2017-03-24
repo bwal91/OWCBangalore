@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170322004707) do
+ActiveRecord::Schema.define(version: 20170324040548) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "pg_stat_statements"
 
   create_table "ahoy_events", force: :cascade do |t|
     t.integer  "visit_id"
@@ -24,6 +25,15 @@ ActiveRecord::Schema.define(version: 20170322004707) do
     t.index ["name", "time"], name: "index_ahoy_events_on_name_and_time", using: :btree
     t.index ["user_id", "name"], name: "index_ahoy_events_on_user_id_and_name", using: :btree
     t.index ["visit_id", "name"], name: "index_ahoy_events_on_visit_id_and_name", using: :btree
+  end
+
+  create_table "article_text", force: :cascade do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "file_uploads_id"
+    t.index ["file_uploads_id"], name: "index_article_text_on_file_uploads_id", using: :btree
   end
 
   create_table "blazer_audits", force: :cascade do |t|
@@ -70,6 +80,15 @@ ActiveRecord::Schema.define(version: 20170322004707) do
     t.string   "data_source"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "file_uploads", force: :cascade do |t|
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.string   "document_file_name"
+    t.string   "document_content_type"
+    t.integer  "document_file_size"
+    t.datetime "document_updated_at"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -146,6 +165,15 @@ ActiveRecord::Schema.define(version: 20170322004707) do
     t.index ["receiver_id", "receiver_type"], name: "index_mailboxer_receipts_on_receiver_id_and_receiver_type", using: :btree
   end
 
+  create_table "sessions", force: :cascade do |t|
+    t.string   "session_id", null: false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["session_id"], name: "index_sessions_on_session_id", unique: true, using: :btree
+    t.index ["updated_at"], name: "index_sessions_on_updated_at", using: :btree
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "status"
     t.integer  "memb"
@@ -209,4 +237,5 @@ ActiveRecord::Schema.define(version: 20170322004707) do
     t.index ["visit_token"], name: "index_visits_on_visit_token", unique: true, using: :btree
   end
 
+  add_foreign_key "article_text", "file_uploads", column: "file_uploads_id"
 end

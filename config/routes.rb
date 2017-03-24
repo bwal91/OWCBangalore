@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  mount Blazer::Engine, at: "blazer"
-  mount PgHero::Engine, at: "pghero"
+  mount Blazer::Engine, at: 'blazer'
+  mount PgHero::Engine, at: 'pghero'
   devise_scope :user do
     get '/login', :to => 'devise/sessions#new', :as => :login
     post '/login_user', :to => 'devise/sessions#create', :as => :login_user
@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     get '/change_password', :to => 'devise/passwords#new', :as => :change_password
   end
   root to: 'homes#index' # Home page
+  get '/test', to: 'homes#test'
   get '/back', to: 'homes#index' # Back button option
   # Bangalore dropdown navigation bar*
   get '/moving_to', to: 'homes#moving_to', :as => :moving_to
@@ -98,7 +99,7 @@ Rails.application.routes.draw do
   # Contact Us bottom of page
   get '/contact', to: 'homes#contact'
   # match '/contacts', to: 'contacts#new', via: 'get'
-  # resources "contacts", only: [:new, :create]
+  # resources 'contacts', only: [:new, :create]
   get '/profile', to: 'users#profile'
   get '/no_mobile', to: 'homes#no_mobile', as: 'no_mobile'
   get '/payments', to: 'payments#index'
@@ -116,15 +117,18 @@ Rails.application.routes.draw do
   # resources :messages
   # resources :conversations, only: [:index, :show, :destroy]
 
-
+  get 'search', to: 'search#search'
+  
 
   mount ActionCable.server => '/cable'
-
+  mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
 # mailbox folder routes
-  get "mailbox/inbox" => "mailbox#inbox", as: :mailbox_inbox
-  get "mailbox/sent" => "mailbox#sent", as: :mailbox_sent
-  get "mailbox/trash" => "mailbox#trash", as: :mailbox_trash
+  get 'mailbox/inbox' => 'mailbox#inbox', as: :mailbox_inbox
+  get 'mailbox/sent' => 'mailbox#sent', as: :mailbox_sent
+  get 'mailbox/trash' => 'mailbox#trash', as: :mailbox_trash
 
+  get 'addart', to: 'articles#index'
+  post '/add-article', to: 'articles#create'
   # conversations
   resources :conversations do
     member do

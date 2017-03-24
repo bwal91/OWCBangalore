@@ -1,12 +1,25 @@
+require 'henkei'
+require 'docsplit'
 class HomesController < ApplicationController
   load_and_authorize_resource
   before_action :authenticate_user!, :only => [:public_calendar, :board_members]
   # Home Page
   def index
   end
+
   def test
-    render :template => "layouts/dropinbox"
+    article = "Rangoli-01-17.pdf"
+    @pageText = ""
+    File.open(article, "rb") do |io|
+      reader = PDF::Reader.new(io)
+      reader.pages.each do |page|
+        @pageText += page.text
+      end
+    end
+    render :layout => false
+
   end
+  
   def login
   end
   # Bangalore dropdown bar

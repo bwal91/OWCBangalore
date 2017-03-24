@@ -50,12 +50,12 @@ gem 'cancancan'
 gem 'load_and_authorize_resource'
 gem 'normalize-rails'
 gem 'binding_of_caller'
-gem "therubyracer"
-gem 'less-rails', git: 'https://github.com/Genkilabs/less-rails' #fix for deprecated Sprockets ImportProcessor
+gem 'therubyracer'
+# gem 'less-rails', git: 'https://github.com/Genkilabs/less-rails' #fix for deprecated Sprockets ImportProcessor
 gem 'sprockets', '3.6.3'
-gem "twitter-bootstrap-rails"
-gem "gmaps4rails"
-gem "geocoder"
+gem 'twitter-bootstrap-rails'
+gem 'gmaps4rails'
+gem 'geocoder'
 gem 'paperclip'
 gem 'taps'
 gem 'browser'
@@ -64,9 +64,23 @@ gem 'chartkick'
 gem 'groupdate'
 gem 'blazer'
 gem 'pghero'
+gem 'derailed', group: :development
+# Search PDF Gems
+# gem 'henkei'
+# gem 'algoliasearch-rails'
+# gem 'tika-app'
+# gem 'dotenv-rails', groups: [:development, :test]
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+# gem 'sidekiq'
 #END for Brandon
-
-
+gem 'rack-mini-profiler'
+gem 'memory_profiler'
+gem 'docsplit'
+gem 'henkei'
+gem 'pdfjs_viewer-rails'
+gem 'pdf-reader'
+gem 'activerecord-session_store'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :production do
